@@ -15,11 +15,6 @@ main {
     margin: auto;
     padding: 40px;
     column-gap: 40px;
-
-    @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
 }
 
 .sub-title {
@@ -59,10 +54,6 @@ section .title {
     margin-bottom: 10px;
     text-transform: uppercase;
     line-height: 83%;
-
-    @media screen and (max-width: 800px) {
-        font-size: 28px;
-    }
 }
 
 section .title-desc {
@@ -119,4 +110,16 @@ footer .fineprint {
     color: #baa9e86b;
     max-width: 400px;
     text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    section .title {
+        font-size: 28px;
+    }
 }
