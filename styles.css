@@ -8,7 +8,7 @@ html {
     background-color: #171719;
 }
 
-main {
+body > main {
     display: grid;
     grid-template-columns: 30% 1fr;
     max-width: 1200px;
@@ -17,9 +17,16 @@ main {
     column-gap: 40px;
 }
 
+h1, h2 {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+p {
+    font-family: 'Imprima', sans-serif;
+}
+
 .sub-title {
     color: #F1F1F1;
-    font-family: "Inknut Antiqua", serif;
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 20px;
@@ -36,12 +43,12 @@ header .cover {
     margin-bottom: 20px;
 }
 
-header .cover .cover-img {
+header .cover img:last-of-type {
     width: 100%;
     border-radius: 5px;
 }
 
-header .cover .cover-glow {
+header .cover img:first-of-type {
     position: absolute;
     top: -5%;
     left: -5%;
@@ -53,9 +60,8 @@ header .links {
     margin-bottom: 40px;
 }
 
-section .title {
+section .main-header h1:first-child {
     color: #FAE2E2;
-    font-family: "Inknut Antiqua", serif;
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 10px;
@@ -65,7 +71,6 @@ section .title {
 
 section .title-desc {
     color: #FAE2E2;
-    font-family: "Inknut Antiqua", serif;
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 10px;
@@ -75,16 +80,15 @@ section .title-desc span {
     color: #baa9e8;
 }
 
-section .main-body .desc {
-    margin-bottom: 50px;
-}
-
 section .main-body p {
     color: #8a8487;
-    font-family: "Imprima", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+}
+
+section .main-body p:first-of-type {
+    margin-bottom: 50px;
 }
 
 footer {
@@ -98,7 +102,6 @@ footer {
 
 footer p {
     color: #baa9e8;
-    font-family: "Imprima", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -112,7 +115,7 @@ footer a {
     color: inherit;
 }
 
-footer .fineprint {
+footer p:nth-last-child(1) {
     margin-top: 30px;
     color: #baa9e86b;
     max-width: 400px;
